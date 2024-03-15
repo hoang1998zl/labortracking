@@ -11,14 +11,14 @@
     <meta property="og:description" content="{{ $app_setting->meta_description ?? 'Quản lý nhân sự' }}">
     <meta property="og:title" content="WEOS">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="{{ asset('gn24-v2/img-3/logo-labor.png') }}" type="image/x-icon">
-    <meta property="og:image:secure_url" content="{{ asset('gn24-v2/img-3/logo-labor.png') }}" type="image/x-icon">
+    <meta property="og:image" content="{{ asset('gn24-v2/img-3/icon/LogoWeos.png') }}" type="image/x-icon">
+    <meta property="og:image:secure_url" content="{{ asset('gn24-v2/img-3/icon/LogoWeos.png') }}" type="image/x-icon">
 
     <meta name="google-site-verification" content="QwiNp6wYXXnmyjWgLkNWZK_Ysk8ZD-0A_Y6NYuMlyFA" />
     <meta name="{{ $app_setting->meta_keyword ?? 'Quản lý nhân sự' }}"
         content="{{ $app_setting->meta_description ?? 'Quản lý nhân sự' }}">
     <title>Labor Tracking</title>
-    <link rel="icon" href="{{ asset('gn24-v2/img-3/logo-labor.png') }}" type="image/x-icon" />
+    <link rel="icon" href="{{ asset('gn24-v2/img-3/icon/LogoWeos.png') }}" type="image/x-icon" />
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css">
