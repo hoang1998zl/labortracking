@@ -1,28 +1,12 @@
-<div>
-    @auth
-        {{-- desktop menu --}}
-        @include('gn24-v2.layouts.partials.headers-auth.desktop')
+<div id="header" class="w-full bg-white px-4 h-16 flex justify-between items-center gap-4">
+    <a href="{{ route('gn24.index') }}" class="w-40 h-full block focus:outline-none">
+        <img src="{{ asset('gn24-v2/img-3/icon/LogoWeos.png') }}" alt="" class="h-full">
+    </a>
 
-        {{-- mobile menu --}}
-        @include('gn24-v2.layouts.partials.headers-auth.mobile')
-    @else
-        {{-- desktop menu --}}
-        @include('gn24-v2.layouts.partials.headers-noauth.desktop')
-        
-        {{-- mobile menu --}}
-        @include('gn24-v2.layouts.partials.headers-noauth.mobile')
-    @endauth
-
-    @include('gn24-v2.modals.login')
-
-    @include('gn24-v2.modals.service')
-
-    @include('gn24-v2.modals.register')
-
-    @include('gn24-v2.modals.app-download')
-
-    @include('gn24-v2.modals.khampha')
-
+    <button type="button"
+        class="w-40 h-4/6 bg-orange-400 text-white flex justify-center items-center cursor-pointer text-lg rounded-full z-50">
+        Khám phá
+    </button>
 </div>
 
 @section('scripts')

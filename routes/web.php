@@ -42,40 +42,6 @@ Route::get('/', function () {
 })->middleware('checkIfUserIsAuthenticated')->name('gn24.index');
 
 Route::middleware(['isSetting'])->group(function () {
-    Route::get('/bang-gia', function () {
-        return view('gn24-v2.price');
-    })->name('gn24.price');
-    Route::get('/lien-he', function () {
-        return view('gn24-v2.contact');
-    })->name('gn24.contact');
-    Route::get('/cac-san-pham', function () {
-        return view('gn24-v2.products.index');
-    })->name('gn24.products');
-    Route::get('/cac-san-pham/quan-ly-nhan-su', function () {
-        return view('gn24-v2.products.product-1');
-    })->name('gn24.product-1');
-    Route::get('/cac-san-pham/tai-lieu-bao-mat', function () {
-        return view('gn24-v2.products.product-2');
-    })->name('gn24.product-2');
-    // Route::get('/tong-hop-tin-tuc', [NewsController::class, 'index'])->name('gn24.news.index');
-    // Route::get('/tong-hop-video', function () {
-    //     return view('gn24-v2.videos.index');
-    // })->name('gn24.videos.index');
-    Route::get('/tong-hop-video/{video}', function () {
-        return view('gn24-v2.videos.index');
-    })->name('gn24.videos.index');
-    Route::get('/chi-tiet-video', function () {
-        return view('gn24-v2.videos.video-detail');
-    })->name('gn24.videos.details');
-    Route::get('/tai-ung-dung', function () {
-        return view('gn24-v2.mobile-app-download');
-    })->name('gn24.app');
-    Route::get('/policies', function () {
-        return view('gn24-v2.policies');
-    })->name('gn24.policies');
-    Route::get('/terms', function () {
-        return view('gn24-v2.terms');
-    })->name('gn24.terms');
 
     //social authentication
     Route::get('/auth/redirect/{provider}', [SocialController::class, 'redirect']);

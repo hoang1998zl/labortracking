@@ -51,12 +51,11 @@
 </head>
 
 <body class="select-none bg-slate-100">
-    <div class="w-full lg:flex">
+    <div class="w-full">
         @include('gn24-v2.layouts.partials.header')
         @yield('content')
     </div>
     @include('gn24-v2.layouts.partials.footer')
-    @include('gn24-v2.videos.video-modal')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script src="{{ asset('gn24-v2/js/toggle.js') }}"></script>

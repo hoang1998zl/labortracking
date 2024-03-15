@@ -1,28 +1,51 @@
 <footer>
-    <div
-        class="w-full mt-4 mx-auto grid grid-cols-1 lg:grid-cols-5 py-4 px-4 md:px-10 gap-x-32 bg-[#1e1e1f] text-white lg:z-30 relative">
-        <div class="w-full h-full flex flex-col md:flex-row lg:flex-col items-center lg:items-start lg:col-span-3">
-            <img class="w-32" src="{{ asset('gn24-v2/img-3/icon/LogoWeos.png') }}" alt="">
-            <p class="text-sm">
-                We<span class="text-orange-400">OS<sup>®</sup></span> ra đời với sứ mệnh đồng hành và nâng tầm thương hiệu, phát
-                triển toàn diện. Đặc biệt với dịch vụ chuyên nghiệp tại We<span class="text-orange-400">OS<sup>®</sup></span>, doanh
-                nghiệp bạn sẽ có bệ phóng vững chắc cho mọi hoạt động kinh doanh.
+    <div class="w-full bg-white grid grid-cols-1 lg:grid-cols-2 py-10">
+        <div class="w-full px-4 lg:px-10">
+            <h1 class="text-2xl lg:text-2xl 2xl:text-3xl font-bold text-center text-orange-400 mb-4">
+                Muốn tìm hiểu nhiều hơn?
+            </h1>
+            <p
+                class="w-5/6 md:w-3/5 lg:w-4/5 xl:w-5/6 2xl:w-4/6 mx-auto text-left text-gray-400 text-base lg:text-lg italic">
+                Hãy điền thông tin vào form dưới, các chuyên gia của chúng tôi sẽ liên hệ lại với quý khách.
             </p>
+            @include('gn24-v2.contact')
         </div>
-        <div class="w-full h-full flex flex-col justify-between lg:col-span-2 pb-20 pt-4 lg:pt-0 lg:pb-0">
-            <p class="text-white pt-10 pb-10 lg:pb-5 hidden lg:block">
-                Ứng dụng di động
+        <div
+            class="w-full h-5/6 self-center px-4 lg:px-10 lg:border-l-2 border-orange-400 flex flex-col justify-evenly items-center text-center font-bold gap-y-4 mt-5">
+            <p class="text-orange-400 text-2xl lg:text-2xl 2xl:text-3xl">
+                Hỗ trợ
+                <span class="text-gray-900">
+                    nhanh
+                </span>
             </p>
-            <div class="w-full flex justify-center lg:justify-between 2xl:justify-start items-end gap-2">
-                <a class="cursor-pointer w-full md:w-auto md:h-14">
-                    <img src="{{ asset('gn24-v2/img/app-store.png') }}" alt=""
-                        class="h-full rounded-md border border-white">
-                </a>
-                <a class="cursor-pointer w-full md:w-auto md:h-14">
-                    <img src="{{ asset('gn24-v2/img/google-play.png') }}" alt=""
-                        class="h-full rounded-md border border-white">
-                </a>
-            </div>
+            <p class="text-left w-full">
+                Hotline hỗ trợ
+            </p>
+            <p class="text-orange-400 font-bold text-xl lg:text-3xl 2xl:text-4xl">
+                0938 805 658
+            </p>
+            <hr class="w-full bg-gray-300">
+            <p class="text-left w-full">
+                Bộ phận hỗ trợ khách hàng
+            </p>
+            <a href="mailto: support@weos.vn" class="text-orange-400 font-bold text-lg lg:text-2xl 2xl:text-3xl">
+                support@weos.vn
+            </a>
+            <hr class="w-full bg-gray-300">
+            <p class="text-gray-400 flex flex-col md:flex-row lg:flex-col xl:flex-row gap-1">
+                Chất lượng là danh dự
+                <span>
+                    <a href="https://weos.vn" class="text-gray-900 font-bold">
+                        <span>
+                            We
+                        </span>
+                        <span class="text-orange-400 -ms-1">
+                            OS
+                        </span>
+                    </a>
+                    luôn đồng hành cùng bạn
+                </span>
+            </p>
         </div>
     </div>
 </footer>
