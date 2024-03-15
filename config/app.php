@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'https://labortracking.vn/'),
+    'url' => env('APP_URL', 'https://weos.vn/'),
 
     'asset_url' => env('ASSET_URL'),
 
